@@ -1,0 +1,153 @@
+parameter_bounds:
+  W_M0:
+    min: 0.2
+    max: 10.0
+    type: real
+  L_M0:
+    min: 0.13
+    max: 1.0
+    type: real
+  M_M0:
+    min: 1
+    max: 100
+    type: int
+  W_M8:
+    min: 0.2
+    max: 10.0
+    type: real
+  L_M8:
+    min: 0.13
+    max: 1.0
+    type: real
+  M_M8:
+    min: 1
+    max: 100
+    type: int
+  W_M10:
+    min: 0.2
+    max: 10.0
+    type: real
+  L_M10:
+    min: 0.13
+    max: 1.0
+    type: real
+  M_M10:
+    min: 1
+    max: 100
+    type: int
+  W_M11:
+    min: 0.2
+    max: 10.0
+    type: real
+  L_M11:
+    min: 0.13
+    max: 1.0
+    type: real
+  M_M11:
+    min: 1
+    max: 100
+    type: int
+  W_M17:
+    min: 0.2
+    max: 10.0
+    type: real
+  L_M17:
+    min: 0.13
+    max: 1.0
+    type: real
+  M_M17:
+    min: 1
+    max: 100
+    type: int
+  W_M21:
+    min: 0.2
+    max: 10.0
+    type: real
+  L_M21:
+    min: 0.13
+    max: 1.0
+    type: real
+  M_M21:
+    min: 1
+    max: 100
+    type: int
+  W_M23:
+    min: 0.2
+    max: 10.0
+    type: real
+  L_M23:
+    min: 0.13
+    max: 1.0
+    type: real
+  M_M23:
+    min: 1
+    max: 100
+    type: int
+  Ib:
+    min: 1e-6
+    max: 4e-5
+    type: real
+  C0:
+    min: 1.0
+    max: 100.0
+    type: real
+  C1:
+    min: 1.0
+    max: 100.0
+    type: real
+
+ckt_hierarchy:
+- [M0, x1.XM0, pfet_01v8, m]
+- [M1, x1.XM1, pfet_01v8, m]
+- [M2, x1.XM2, pfet_01v8, m]
+- [M3, x1.XM3, pfet_01v8, m]
+- [M4, x1.XM4, pfet_01v8, m]
+- [M5, x1.XM5, pfet_01v8, m]
+- [M6, x1.XM6, pfet_01v8, m]
+- [M7, x1.XM7, pfet_01v8, m]
+- [M8, x1.XM8, pfet_01v8, m]
+- [M9, x1.XM9, pfet_01v8, m]
+- [M10, x1.XM10, pfet_01v8, m]
+- [M11, x1.XM11, pfet_01v8, m]
+- [M12, x1.XM12, nfet_01v8, m]
+- [M13, x1.XM13, nfet_01v8, m]
+- [M14, x1.XM14, nfet_01v8, m]
+- [M15, x1.XM15, nfet_01v8, m]
+- [M16, x1.XM16, nfet_01v8, m]
+- [M17, x1.XM17, nfet_01v8, m]
+- [M18, x1.XM18, nfet_01v8, m]
+- [M19, x1.XM19, nfet_01v8, m]
+- [M20, x1.XM20, nfet_01v8, m]
+- [M21, x1.XM21, nfet_01v8, m]
+- [M22, x1.XM22, nfet_01v8, m]
+- [M23, x1.XM23, nfet_01v8, m]
+- [C0, x1, C0, c]
+- [C1, x1, C1, c]
+
+op:
+  M0: {}
+  M1: {}
+  M2: {}
+  M3: {}
+  M4: {}
+  M5: {}
+  M6: {}
+  M7: {}
+  M8: {}
+  M9: {}
+  M10: {}
+  M11: {}
+  M12: {}
+  M13: {}
+  M14: {}
+  M15: {}
+  M16: {}
+  M17: {}
+  M18: {}
+  M19: {}
+  M20: {}
+  M21: {}
+  M22: {}
+  M23: {}
+  C0: {}
+  C1: {}

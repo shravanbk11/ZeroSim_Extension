@@ -1,0 +1,57 @@
+output_dir:
+  "/scratch/yang.xiaome/circuit/output/50topo/en12-8-de2-lr2.5e-5"
+
+checkpoint_path:
+  null
+
+logging_dir:
+  "logs"
+
+wandb:
+  project: "AmpModeling"
+
+dataset:
+  topology_file: "/scratch/yang.xiaome/datasets/circuit/topology.json"
+  train_sample_files:
+    - "/scratch/yang.xiaome/datasets/circuit/50topo/train_samples.json"
+  val_sample_files:
+    - "/scratch/yang.xiaome/datasets/circuit/50topo/val_samples.json"
+  test_sample_files:
+    - "/scratch/yang.xiaome/datasets/circuit/50topo/test_samples.json"
+  new_test_sample_files: null
+  max_nodes: 200
+
+model:
+  num_encoder_layers: 12
+  num_decoder_layers: 2
+  num_metrics: 11
+  num_cross_layers: 8
+  node_emb_dim: 128
+  out_dim: 128
+  num_heads: 8
+  decoder_type: "transformer"
+  dropout: 0.1
+  ffn_embedding_dim: 512
+  degree_embed: false
+  max_degree: 10
+  activation: "gelu"
+  norm_type: "layernorm"
+  pos_encoding_type: "learned"
+  lap_dim: null
+
+optimizer:
+  lr: 2.5e-5
+  eps: 1e-8
+  weight_decay: 0.0001
+
+scheduler:
+  name: "linear"
+  num_warmup_steps: 1000
+
+training:
+  seed: null
+  batch_size: 128
+  num_epochs: 100
+  ckpt_epochs: 10
+  num_workers: 4
+  max_grad_norm: 1.0

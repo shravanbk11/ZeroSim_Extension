@@ -1,0 +1,1 @@
+{"<PAD>": 0, "capacitor_n": 1, "capacitor_p": 2, "current_n": 3, "current_p": 4, "gnda_port": 5, "nmos_b": 6, "nmos_d": 7, "nmos_g": 8, "nmos_s": 9, "pmos_b": 10, "pmos_d": 11, "pmos_g": 12, "pmos_s": 13, "resistor_n": 14, "resistor_p": 15, "vdda_port": 16, "vinn_port": 17, "vinp_port": 18, "voltage_n": 19, "voltage_p": 20, "vout_port": 21}

@@ -1,0 +1,57 @@
+output_dir:
+  "/scratch/yang.xiaome/circuit/output/en6-de2-lr1e-3"
+
+logging_dir:
+  "logs"
+
+wandb:
+  project: "AmpModeling"
+
+dataset:
+  topology_file: "/work/yanzhi_group/yang.xiaome/dataset/circuit/topology.json"
+  train_sample_files:
+    - "/work/yanzhi_group/yang.xiaome/dataset/circuit/split_data/train/train_samples.json"
+  val_sample_files:
+    - "/work/yanzhi_group/yang.xiaome/dataset/circuit/split_data/train/val_samples.json"
+  new_val_sample_files:
+    - "/work/yanzhi_group/yang.xiaome/dataset/circuit/split_data/new_topology/val_samples.json"
+  test_sample_files:
+    - "/work/yanzhi_group/yang.xiaome/dataset/circuit/split_data/train/test_samples.json"
+  new_test_sample_files:
+    - "/work/yanzhi_group/yang.xiaome/dataset/circuit/split_data/new_topology/test_samples.json"
+  max_nodes: 200
+
+model:
+  num_encoder_layers: 6
+  num_decoder_layers: 2
+  num_metrics: 11
+  num_cross_layers: 4
+  node_emb_dim: 128
+  out_dim: 128
+  num_heads: 8
+  decoder_type: "transformer"
+  dropout: 0.1
+  ffn_embedding_dim: 512
+  degree_embed: false
+  max_degree: 10
+  activation: "gelu"
+  norm_type: "layernorm"
+  pos_encoding_type: "learned"
+  lap_dim: null
+
+optimizer:
+  lr: 1e-4
+  eps: 1e-8
+  weight_decay: 0.0001
+
+scheduler:
+  name: "linear"
+  num_warmup_steps: 500
+
+training:
+  seed: null
+  batch_size: 256
+  num_epochs: 100
+  ckpt_epochs: 10
+  num_workers: 4
+  max_grad_norm: 1.0

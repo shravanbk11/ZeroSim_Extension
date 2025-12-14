@@ -1,0 +1,11 @@
+{
+  "best_reward": -10000000000.0,
+  "best_parameters": {
+    "C0": 64.30325304733049,
+    "C1": 3.4760647670440266,
+    "R0": 275.10181543728237
+  },
+  "num_evaluations": 100,
+  "stopped_early": false,
+  "time_elapsed_sec": 0.243
+}
